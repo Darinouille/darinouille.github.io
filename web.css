@@ -1,0 +1,534 @@
+/* ---------- Mise en page du texte ---------- */
+
+body {
+  font-size: 15px;
+  color: #072928;
+  margin: 0px;
+  background-color: #EAEEF1;
+  font-family: Verdana, sans-serif;
+  text-align: justify;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 17px;
+  background-color: #7CBC9F;
+	width: 98%;
+  padding: 1%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    width: 94%;
+    padding: 3%;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 1%;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 10px;
+  margin: auto;
+}
+
+h5 {
+  font-weight: normal;
+  width: 90%;
+  margin:auto;
+  font-size: 10px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1%;
+}
+
+.texte {
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 3px;
+  text-align: justify;
+}
+
+section {
+  width: 88%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#credits {
+  font-size: 10px;
+  color: white;
+  background-color: #7CBC9F;
+	width: 95%;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a, #credits a {
+  color: white;
+}
+
+nav a:hover, #credits a:hover {
+  color: #D7EFF4;
+}
+
+#credits img {
+  padding-left: 5px;
+}
+
+a {
+  color: #072928;
+  text-decoration: none;
+}
+
+#deco {
+  float: right;
+}
+
+/* ---------- Animation ---------- */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .animation, .animation2, .animation3, .animation4, .animation5 {
+    display:none;
+  }
+
+  .imageSimple {
+    width: 100%;
+  }
+
+  .dessinTel {
+    display: inline-block;
+    box-shadow: 0px 0px 20px grey;
+    margin: 4.5%;
+  }
+
+  .imageTel {
+    display: block;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .diapo {
+    width: 70%;
+    margin: 50px;
+    box-shadow: 0px 0px 20px grey;
+  }
+}
+
+.ecart {
+  margin: 50px;
+  box-shadow: 0px 0px 20px grey;
+}
+
+@media only screen and (min-width: 480px) {
+  .diapo {
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0px 0px 20px grey;
+  }
+
+  .animation {
+    width: 400px;
+    overflow: auto;
+    margin: auto;
+    float: left;
+  }
+
+  .SIL {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement1;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement1 {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-400px);}
+    66% {transform: translateX(-800px);}
+    100% {transform: translateX(0);}
+  }
+
+  .projetvoltaire {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement2;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes defilement2 {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-400px);}
+    50% {transform: translateX(-800px);}
+    75% {transform: translateX(-1200px);}
+    100% {transform: translateX(0);}
+  }
+
+  .quille {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement3;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes defilement3 {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-400px);}
+    100% {transform: translateX(0);}
+  }
+
+  .animation2 {
+    width: 400px;
+    overflow: auto;
+    margin: auto;
+    float: left;
+  }
+
+  .dessins {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement4;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement4 {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-400px);}
+    50% {transform: translateX(-800px);}
+    75% {transform: translateX(-1200px);}
+    100% {transform: translateX(0px);}
+  }
+
+  .bde {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement5;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement5 {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-400px);}
+    66% {transform: translateX(-800px);}
+    100% {transform: translateX(0px);}
+  }
+
+  .animation3 {
+    width: 700px;
+    overflow: auto;
+    margin: auto;
+    float: left;
+  }
+
+  .roguelike {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement6;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement6 {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-700px);}
+    66% {transform: translateX(-1400px);}
+    100% {transform: translateX(0);}
+  }
+
+  .animation4 {
+    width: 200px;
+    overflow: auto;
+    margin: auto;
+    float: left;
+  }
+
+  .GreenLight {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement7;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement7 {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-200px);}
+    100% {transform: translateX(0);}
+  }
+
+  .animation5 {
+    width: 250px;
+    overflow: auto;
+    margin: auto;
+    float: left;
+  }
+
+  .CCNA {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: defilement8;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes defilement8 {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-250px);}
+    100% {transform: translateX(0px);}
+  }
+
+  .imageTel, .dessinTel {
+    display:none;
+  }
+}
+
+/* ---------- Médias---------- */
+
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 0px 0px 20px grey;
+}
+
+figure {
+  display: inline;
+}
+
+figure img {
+  width: 100%;
+  display : block
+}
+
+figcaption {
+  height: 0px;
+  margin: auto;
+  font-size: 10px;
+  text-align: center;
+  overflow: visible;
+  margin-top: 5px;
+}
+
+#presentation {
+  display: block;
+}
+
+#profil {
+  float: left;
+  width: 30%;
+  display: inline-block;
+}
+
+#intro {
+  float: left;
+  width: 70%;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+figure {
+  display: inline;
+}
+
+figure img {
+  width: 100%;
+  display : block
+}
+
+#intro p {
+  width: 90%;
+  display : block;
+  font-size: 17px;
+  background-color: #7CBC9F;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+#contact {
+  height: 4em;
+  margin:auto;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* ---------- Banderole logo ---------- */
+
+#en-tete {
+  height: 90px;
+  background-color: #7CBC9F;
+}
+
+#logo {
+  height: 60px;
+  position:absolute;
+  padding-top: 15px;
+  padding-left: 5%;
+}
+
+/* ---------- Séparateurs ---------- */
+
+.separator0 {
+	clear: both;
+	height: 100px;
+}
+
+.separator1 {
+	clear: both;
+	height: 50px;
+}
+
+.separator2 {
+	clear: both;
+	height: 20px;
+}
+
+/* ---------- Sommaire ---------- */
+
+#bandeau {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#menu {
+	overflow: hidden;
+  position: static;
+}
+
+#menu a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+#menu > ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 5%;
+  width: 95%;
+  display: block;
+  position: absolute;
+  background: #072928;
+}
+
+#menu > ul li {
+  display: inline-block;
+}
+
+#menu > ul > li > a {
+  display: block;
+  left: 0;
+  width: 100%;
+  margin-right: 50px;
+  line-height: 45px;
+  background: #072928;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #menu > ul > li {
+    width: 20%;
+  }
+
+  #menu > ul > li > a {
+    margin: 0px;
+    font-size: 80%;
+  }
+
+  #menu > ul li ul > li {
+    width: 22%
+  }
+
+  #menu > ul li ul > li > a {
+    margin: 0px;
+    font-size: 80%;
+  }
+}
+
+#menu > ul li ul {
+  display: none;
+}
+
+#menu > ul li ul.actif {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 95%;
+  padding: 0;
+  padding-left: 5%;
+  background: white;
+  line-height: 45px;
+}
+
+#menu > ul li:first-child ul {
+  padding-bottom: 5px;
+}
+
+#menu > ul li ul > li > a {
+  color: #072928;
+  display: block;
+  margin-right: 50px;
+  width: 100%;
+}
+
+.barre {
+  border-bottom: 5px solid #7CBC9F;
+}
+
+#menu > ul li ul li ul {
+  display: none;
+}
+
+#menu > ul li ul li ul.actif {
+  top: 0;
+  right: 0;
+  width: 60%;
+  margin-left: 30%;
+  text-align: right;
+  background: none;
+}
+
+
+#menu > ul li ul > li ul > a {
+  display: block;
+  line-height: 50px;
+}
+
+#photo {
+  position: sticky;
+  top: 90%;
+}
+
+/* ---------- Tableau ---------- */
+
+table {
+  width: 100%;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+}
+
+td {
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 3px;
+  text-align: justify;
+}
